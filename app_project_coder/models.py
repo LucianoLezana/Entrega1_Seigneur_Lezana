@@ -1,10 +1,12 @@
 
 from django.db import models
 
-'''Agregando clases:
-Estudiante (nombre, apellido, email)
-Profesor 
-Curso
+'''
+        Agregando clases:
+-Estudiante (nombre, apellido, email)
+-Profesor (nombre, apellido, email, profesion)
+-Curso (nombre, comision)
+
 '''
 
 
