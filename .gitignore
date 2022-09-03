@@ -2,7 +2,7 @@
 *.pyc
 build/
 dist/
-virtual_env/
+/virtual_env
 .cache/
 .pytest_cache/
 pygsheets.egg-info/
