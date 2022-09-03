@@ -13,19 +13,19 @@ from django.db import models
 
 class Estudiante (models.Model):
 
-    nombre = models.CharField(max_length=130)
-    apellido = models.CharField(max_length=130)
+    nombre = models.CharField(max_length=120)
+    apellido = models.CharField(max_length=120)
     email = models.EmailField()
 
 
 class Profesor (models.Model):
 
-    nombre = models.CharField()
-    apellido = models.CharField()
+    nombre = models.CharField(max_length=120)
+    apellido = models.CharField(max_length=120)
     email = models.EmailField()
-    profesion = models.CharField()
+    profesion = models.CharField(max_length=100)
 
 
 class Curso(models.Model):
-    nombre = models.CharField()
+    nombre = models.CharField(max_length=120)
     comision = models.IntegerField()
