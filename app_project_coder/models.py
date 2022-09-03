@@ -11,14 +11,14 @@ from django.db import models
 
 
 
-class Estudiante (models.Model):
+class Estudiantes (models.Model):
 
     nombre = models.CharField(max_length=120)
     apellido = models.CharField(max_length=120)
     email = models.EmailField()
 
 
-class Profesor (models.Model):
+class Profesores (models.Model):
 
     nombre = models.CharField(max_length=120)
     apellido = models.CharField(max_length=120)
@@ -26,6 +26,6 @@ class Profesor (models.Model):
     profesion = models.CharField(max_length=100)
 
 
-class Curso(models.Model):
+class Cursos(models.Model):
     nombre = models.CharField(max_length=120)
     comision = models.IntegerField()
