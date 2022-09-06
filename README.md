@@ -15,7 +15,7 @@
  <a href="https://www.python.org/doc/" target="_blank" rel="noreferrer"> 
 <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="python" width="40" height="40"/> </a> 
  <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> 
-<img src="https://seeklogo.com/images/D/django-logo-F46C1DD95E-seeklogo.com.png" alt="django" width="40" height="40"/> </a> 
+<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png" alt="django" width="40" height="40"/> </a> 
  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
 <img src="https://i.ibb.co/M7WkcDY/HTML.png" alt="html5" width="40" height="40"/> </a> 
 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
