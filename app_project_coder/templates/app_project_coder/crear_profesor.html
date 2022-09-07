@@ -6,15 +6,13 @@
 <center><h1>Creando profesor</h1></center>
 <br>
 <br>
-<h3>Ingrese los datos del/la profesor/a</h3>
-<form method="post">
-    
-    {% csrf_token %}
-    {{ formulario_profesor.as_p }}
-    
-    <input type="submit" value="Enviar" />
-</form>
-
-
+<center><h3 class="mb-5">Ingrese los datos del/la profesor/a</h3></center>
+<div class="form-group d-grid gap-2 col-3 mx-auto">
+    <form method="post">
+        {% csrf_token %}
+        {{ formulario_profesor.as_p }}
+        <center> <input type="submit" class="btn btn-primary col-4" value="Enviar" /> </center>
+    </form>
+</div>
 
 {%endblock%}

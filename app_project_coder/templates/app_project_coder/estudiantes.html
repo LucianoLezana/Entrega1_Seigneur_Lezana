@@ -18,7 +18,7 @@
   
   <ol>
       {%for estudiante in estudiantes%}
-      <br><li>Nombre y Apellido: {{estudiante.nombre}}{{estudiante.apellido}} <br> EMAIL: {{estudiante.email}}</li>
+      <br><li>Nombre y Apellido: {{estudiante.nombre}} {{estudiante.apellido}} <br> EMAIL: {{estudiante.email}}</li>
       {%endfor%}
   </ol>
   
@@ -26,8 +26,8 @@
 
 <ul>
   <li>
-      <p><b>DAR DE ALTA A NUEVO ESTUDIANTE</b>
-      <a  href="{% url 'crear_estudiante' %}">Pulsa aqui para completar los datos y dar el alta</a></p>
+      <p><b>DAR DE ALTA A NUEVO ESTUDIANTE</b> 
+      <a  href="{% url 'crear_estudiante' %}"> Pulsa aqui para completar los datos y dar el alta</a></p>
   </li>
  </ul>
 
