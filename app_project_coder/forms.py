@@ -10,6 +10,13 @@ class form_curso(forms.Form):
 
 #-------------------
 
+#Formulario Estudiantes:
+class form_estudiantes(forms.Form): 
+    nombre = forms.CharField(max_length=120)
+    apellido = forms.CharField(max_length=120)
+    email = forms.EmailField()
+
+#-------------------
 
 #Formulario Profesores:
 class form_profesores(forms.Form):
@@ -21,10 +28,4 @@ class form_profesores(forms.Form):
 #-------------------
 
 
-#Formulario Estudiantes:
-class form_estudiantes(forms.Form): 
-    nombre = forms.CharField(max_length=120)
-    apellido = forms.CharField(max_length=120)
-    email = forms.EmailField()
 
-#-------------------

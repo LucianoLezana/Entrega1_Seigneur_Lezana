@@ -50,13 +50,43 @@ def buscador_cursos(request):
 #Estudiantes-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 def estudiantes (request):
-    return render(request, "app_project_coder\estudiantes.html")
+    estudiantes = Estudiantes.objects.all()
+    return render(request, "app_project_coder\estudiantes.html", {'estudiantes': estudiantes})
+
+def crear_formulario_estudiante(request):
+    if request.method == "POST":
+        formulario_estudiante = form_estudiantes(request.POST)
+        print(formulario_estudiante)
+        if formulario_estudiante.is_valid:
+            informacion = formulario_estudiante.cleaned_data
+            estudiantes = Estudiantes(nombre=informacion['nombre'], apellido=informacion['apellido'], email=informacion['email'])
+            estudiantes.save()
+            return render(request, "app_project_coder\estudiantes.html", {"estudiante_creado": True})
+    else:
+        formulario_estudiante = form_estudiantes()
+        return render(request, "app_project_coder\crear_estudiante.html", {"formulario_estudiante": formulario_estudiante})
+
+
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 #Profesores-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 def profesores (request):
-    return render(request, "app_project_coder\profesores.html")
+    profesores = Profesores.objects.all()
+    return render(request, "app_project_coder\profesores.html",  {'profesores': profesores})
+    
 
+def crear_formulario_profesor(request):
+    if request.method == "POST":
+        formulario_profesor = form_profesores(request.POST)
+        print(formulario_profesor)
+        if formulario_profesor.is_valid:
+            informacion = formulario_profesor.cleaned_data
+            profesores = Profesores(nombre=informacion['nombre'], apellido=informacion['apellido'], email=informacion['email'], profesion=informacion['profesion'])
+            profesores.save()
+            return render(request, "app_project_coder\profesores.html", {"profesor_creado": True})
+    else:
+        formulario_profesor = form_profesores()
+        return render(request, "app_project_coder\crear_profesor.html", {"formulario_profesor": formulario_profesor})
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------

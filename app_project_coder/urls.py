@@ -14,11 +14,14 @@ urlpatterns = [
     
     # PATH DE ESTUDIANTES---------------------------------------------------------------------------
     path('estudiantes/', views.estudiantes, name="Estudiantes"),
+    path('crear_estudiante/', views.crear_formulario_estudiante, name="crear_estudiante"),
 
     #------------------------------------------------------------------------------------------
     
     # PATH DE PROFESORES---------------------------------------------------------------------------
     path('profesores/', views.profesores, name="Profesores"),
+    path('crear_profesor/', views.crear_formulario_profesor, name="crear_profesor"),
+
     #------------------------------------------------------------------------------------------
 
 ]
