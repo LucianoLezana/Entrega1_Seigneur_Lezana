@@ -1,5 +1,9 @@
 <h2 align="center">PRIMERA ENTREGA DEL PROYECTO FINAL</h2>
+<p align="left">
 
+ ***Proyecto para crear estudiantes, profesores y cursos. Una vez creados pueden ser visibles para el usuario.***
+
+</p>
 <h3 align="left">Realizado por: </h3>
 
 <p align="left">
@@ -7,12 +11,6 @@
 * Luciano Benjamín Lezana
 
 * Lucía Roig Seigneur
-
-</p>
-
-<p align="left">
-
- Realizamos este proyecto para crear estudiantes, profesores y cursos. Una vez creados pueden ser visibles para el usuario.
 
 </p>
 
