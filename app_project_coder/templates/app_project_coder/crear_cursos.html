@@ -6,10 +6,12 @@
 <center><h1>Creando curso</h1></center>
 <br>
 <br>
-<h3>Ingrese los datos: </h3>
+<h3>Ingrese los datos </h3>
 <form method="post">
+    
     {% csrf_token %}
     {{ formulario_curso.as_p }}
+    
     <input type="submit" value="Enviar" />
 </form>
 
