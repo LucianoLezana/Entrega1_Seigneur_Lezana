@@ -19,7 +19,7 @@ def estudiantes (request):
 def profesores (request):
     return render(request, "app_project_coder\profesores.html")
 
-#Curso
+#Curso-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def cursos(request):
     cursos = Cursos.objects.all()
     return render(request, "app_project_coder\cursos.html", {'cursos': cursos})
@@ -38,5 +38,20 @@ def crear_formulario_curso(request):
     else:
         formulario_curso = form_curso()
         return render(request, "app_project_coder\crear_cursos.html", {"formulario_curso":formulario_curso})
-    
-#
+
+
+def busqueda_cursos(request):
+    return render(request, "app_project_coder/busqueda_curso.html")
+
+
+def buscador_cursos(request):
+    if request.GET["comision"]:
+        comision = request.GET["comision"]
+        cursos = Cursos.objects.filter(comision__icontains=comision)
+        return render(request, "app_project_coder\cursos.html", {'cursos': cursos})
+    else:
+        return render(request, "app_project_coder\cursos.html", {'cursos': []})
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
