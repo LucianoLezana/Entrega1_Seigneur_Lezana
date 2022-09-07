@@ -10,6 +10,12 @@
 
 </p>
 
+<p align="left">
+
+ Realizamos este proyecto para crear estudiantes, profesores y cursos. Una vez creados pueden ser visibles para el usuario.
+
+</p>
+
 <h3 align="center">Lenguajes y herramientas utilizadas:</h3>
  <p align="center">
  <a href="https://www.python.org/doc/" target="_blank" rel="noreferrer"> 
