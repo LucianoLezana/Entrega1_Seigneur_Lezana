@@ -5,19 +5,10 @@ from django.template import loader
 from app_project_coder.models import Cursos, Estudiantes, Profesores
 from app_project_coder.forms import *
 
-# Create your views here.
-
 
 def inicio (request):
     return render(request, "app_project_coder\inicio.html")  
 
-
-def estudiantes (request):
-    return render(request, "app_project_coder\estudiantes.html")
-
-
-def profesores (request):
-    return render(request, "app_project_coder\profesores.html")
 
 #Curso-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def cursos(request):
@@ -53,5 +44,19 @@ def buscador_cursos(request):
         return render(request, "app_project_coder\cursos.html", {'cursos': []})
 
 
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Estudiantes-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+def estudiantes (request):
+    return render(request, "app_project_coder\estudiantes.html")
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Profesores-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+def profesores (request):
+    return render(request, "app_project_coder\profesores.html")
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
