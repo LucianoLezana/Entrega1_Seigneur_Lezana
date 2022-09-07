@@ -5,6 +5,12 @@
 <center><h1>Bienvenidos a la seccion de Cursos</h1></center>
 <br>
 <br>
+{%if curso_creado%}
+
+<div><h1 style="color:rgb(35, 160, 35)">Tu curso fue creado exitosamente!!!</h1></div>
+<p>Quieres ver si tu curso se creo?<a  href="{% url 'Cursos' %}">Pulsa aqui para Verlo</a></p></p>
+
+{%endif%}
 <ul>
     <h4><li>Cursos disponibles:</li></h4>
     
@@ -27,6 +33,8 @@
         <a  href="{% url 'buscar_curso' %}">Pulsa aqui para buscarlo</a></p>
     </li>
 </ul>
+
+
 
 
 

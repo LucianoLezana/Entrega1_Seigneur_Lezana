@@ -33,7 +33,7 @@ def crear_formulario_curso(request):
             informacion = formulario_curso.cleaned_data
             cursos = Cursos(nombre=informacion['nombre'], comision=informacion['comision'])
             cursos.save()
-            return render(request, "app_project_coder\inicio.html")
+            return render(request, "app_project_coder\cursos.html", {"curso_creado":True})
 
     else:
         formulario_curso = form_curso()
