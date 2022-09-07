@@ -20,12 +20,9 @@ def profesores (request):
     return render(request, "app_project_coder\profesores.html")
 
 #Curso
-def cursos (request):
-    return render(request, "app_project_coder\cursos.html")
-
-
-def formulario_cursos(request):
-    return render(request, "app_project_coder\crear_cursos.html")
+def cursos(request):
+    cursos = Cursos.objects.all()
+    return render(request, "app_project_coder\cursos.html", {'cursos': cursos})
 
 
 def crear_formulario_curso(request):
@@ -36,10 +33,10 @@ def crear_formulario_curso(request):
             informacion = formulario_curso.cleaned_data
             cursos = Cursos(nombre=informacion['nombre'], comision=informacion['comision'])
             cursos.save()
-            return render(request, "app_project_coder/inicio.html")
+            return render(request, "app_project_coder\inicio.html")
 
     else:
         formulario_curso = form_curso()
-        return render(request, "app_project_coder/crear_cursos.html", {"formulario_curso":formulario_curso})
+        return render(request, "app_project_coder\crear_cursos.html", {"formulario_curso":formulario_curso})
     
 #

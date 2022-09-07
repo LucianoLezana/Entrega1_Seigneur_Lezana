@@ -1,16 +1,23 @@
 {%extends "app_project_coder\template_base.html"%}
 
 {%load static%}
-
 {%block contenido_base%}
 <center><h1>Bienvenidos a la seccion de Cursos</h1></center>
 <br>
 <br>
-<h1 align="left">Aca podes ver los cursos que ofrece la pagina:</h1> 
-<br>
-<br>
-<br>
-<a href="{% url 'crear_cursos' %}">Crear curso!</a>
+<ul>
+    <h4><li>Cursos disponibles:</li></h4>
+    
+    <ol>
+        {%for curso in cursos%}
+        <br><li>{{curso.nombre}} <br> Nº comision: {{curso.comision}}</li>
+        {%endfor%}
+    </ol>
+    
+</ul>
+
+
+<p>Su curso no esta dispinible? <a  href="{% url 'crear_cursos' %}">Pulsa aqui para crear uno nuevo</a></p>
 
 
 
