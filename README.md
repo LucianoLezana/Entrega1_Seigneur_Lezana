@@ -26,4 +26,4 @@
 <img src="https://i.ibb.co/1znfnp9/CSS.png" alt="css3" width="40" height="40"/> </a> 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
 <img src="https://i.ibb.co/K5rTsj2/JS.png" alt="javascript" width="40" height="40"/> </a>
- </p>
+ </p>"# repositorioprueba" 
